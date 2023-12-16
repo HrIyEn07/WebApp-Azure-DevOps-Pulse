@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   name: aksimage 
 spec:
-  replicas: 1
-  selector:
+  replicas: 
+  selector:20
     matchLabels:
       app: aksimage
   template:
