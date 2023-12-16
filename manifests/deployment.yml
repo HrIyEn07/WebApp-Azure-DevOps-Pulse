@@ -9,7 +9,7 @@ spec:
       app: aksimage
   template:
     metadata:
-      labels:
+      labels: 50
         app: aksimage 
     spec:
       containers:
