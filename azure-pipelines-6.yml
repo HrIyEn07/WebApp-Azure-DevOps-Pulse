@@ -60,5 +60,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'DevOps-artict777'
+    ArtifactName: 'DevOps-sonar01'
     publishLocation: 'Container'
