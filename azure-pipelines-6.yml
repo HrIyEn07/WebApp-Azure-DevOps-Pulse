@@ -22,7 +22,7 @@ steps:
     command: 'restore'
     restoreSolution: '$(solution)'
     feedsToUse: 'select'
-    verbosityRestore: 'Quiet'
+    verbosityRestore: 'Normal'
 
 - task: SonarCloudPrepare@1
   inputs:
