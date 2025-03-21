@@ -35,12 +35,12 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(agent.builddirectory)'
+    SourceFolder: '$(Build.SourcesDirectory)'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'devops-artifacts'
+    ArtifactName: '$(Build.BuildId)-artifacts'
     publishLocation: 'Container'
